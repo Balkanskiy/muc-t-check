@@ -26,10 +26,10 @@ export default function IndexPage() {
 
   // Effect for automatic checking every 3 minutes
   useEffect(() => {
-    // Initial check when component mounts
+    // Initial check when the component mounts
     checkAppointments();
 
-    // Set up interval to decrement countdown every second
+    // Set up interval-to-decrement countdown every second
     const countdownInterval = setInterval(() => {
       setCountdown((prevCountdown) => {
         if (prevCountdown <= 1) {
@@ -124,7 +124,7 @@ export default function IndexPage() {
           } else {
             proxyError = `Proxy returned status: ${response.status}`;
           }
-        } catch (err) {
+        } catch (err: any) {
           proxyError = err.message;
           console.error(`Error with proxy ${proxy}:`, err);
         }
@@ -154,7 +154,7 @@ export default function IndexPage() {
           });
         }
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error fetching appointments:", error);
       setError(
         `Failed to fetch appointments: ${error.message}. This might be due to CORS restrictions. Please try again later or try using a browser extension that disables CORS.`,
