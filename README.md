@@ -1,5 +1,3 @@
-# Munich Termin Checker
-
 ### Install dependencies
 
 ```bash
