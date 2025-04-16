@@ -29,7 +29,7 @@ export default function IndexPage() {
     // Initial check when the component mounts
     checkAppointments();
 
-    // Set up interval-to-decrement countdown every second
+    // Set up an interval-to-decrement countdown every second
     const countdownInterval = setInterval(() => {
       setCountdown((prevCountdown) => {
         if (prevCountdown <= 1) {

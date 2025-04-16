@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint -c .eslintrc.json ./src/**/**/*.{ts,tsx} --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:gh-pages": "vite preview --base=/muc-termnin-check/"
   },
   "dependencies": {
     "@heroui/button": "2.2.17",
