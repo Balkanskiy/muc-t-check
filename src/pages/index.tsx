@@ -12,11 +12,11 @@ interface AppointmentResponse {
   appointmentTimestamps?: string[];
 }
 
-// const notfallHilfeAufenthaltstitelUrl =
-("https://www48.muenchen.de/buergeransicht/api/backend/available-appointments?date=Invalid+date&officeId=10187259&serviceId=10339027&serviceCount=1");
-
 const notfallHilfeAufenthaltstitelUrl =
-  "https://www48.muenchen.de/buergeransicht/api/backend/available-appointments?date=2025-04-17&officeId=10238880&serviceId=1064381&serviceCount=1";
+  "https://www48.muenchen.de/buergeransicht/api/backend/available-appointments?date=Invalid+date&officeId=10187259&serviceId=10339027&serviceCount=1";
+
+// const notfallHilfeAufenthaltstitelUrl =
+//   "https://www48.muenchen.de/buergeransicht/api/backend/available-appointments?date=2025-04-17&officeId=10238880&serviceId=1064381&serviceCount=1";
 
 export default function IndexPage() {
   const [loading, setLoading] = useState(false);
