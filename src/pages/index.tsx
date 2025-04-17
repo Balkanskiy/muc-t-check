@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@heroui/button";
+import { Link } from "@heroui/link";
 
 import glassBreakSound from "./assets/glass-break-316720.mp3";
 
@@ -168,6 +169,14 @@ export default function IndexPage() {
     <DefaultLayout>
       <div className="flex flex-col w-full max-w-3xl mx-auto bg-default-50 rounded-lg shadow-md p-4">
         <h2 className="text-xl font-bold mb-4">Проверка доступных записей</h2>
+        <Link
+          isExternal
+          showAnchorIcon
+          className={"mb-10"}
+          href="https://stadt.muenchen.de/buergerservice/terminvereinbarung.html#/services/10339027/locations/10187259"
+        >
+          Buerger Service
+        </Link>
 
         <div className="flex items-center gap-4 mb-4">
           <Button
